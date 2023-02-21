@@ -1,2 +1,1 @@
-for i in range(60):
-    print("koekoek", i)
+print("koekoek\n" * 3, end='')
