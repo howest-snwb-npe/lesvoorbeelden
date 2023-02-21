@@ -1,12 +1,13 @@
 score = int(input("Geef uw score /20: "))
 
-if score >= 16:
-    print("Uitzonderlijk")
-elif score >= 14:
-    print("Onderscheidend")
-elif score >= 12:
-    print("Ruim en vlot")
-elif score >= 10:
-    print("Voldoende")
-else:
-    print("Onvoldoende")
+match score:
+    case 16 | 17 | 18 | 19 | 20:
+        print("Uitzonderlijk")
+    case 14 | 15:
+        print("Onderscheidend")
+    case 12 | 13:
+        print("Ruim en vlot")
+    case 10 | 11:
+        print("Voldoende")
+    case _:
+        print("Onvoldoende")
