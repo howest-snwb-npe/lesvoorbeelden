@@ -7,5 +7,4 @@ else:
     if x > y:
         print("x is groter dan y")
     else:
-        if x == y:
-            print("x is gelijk aan y")
+        print("x is gelijk aan y")
